@@ -1,0 +1,44 @@
+#wrapper
+{
+  padding: 200px;
+  border: 1px solid black;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+#nav_{
+margin-left: 350px;
+}
+#list{
+  margin-left: 180px;
+  
+}
+li{
+  list-style: none;
+  border: 1px solid black;
+  height: 30px;
+ width: 700px;
+ padding: 10px;
+ margin: 3px;
+}
+#personname{
+  font-family: 'arial';
+}
+#days{
+  margin-left: 500px;
+}
+#years_ch{
+  margin-left:20px
+}
+#may{
+  transition: background-color 1s ease;
+  background-color:white;
+  color:black;
+  margin-left: 300px;
+  border: 1px solid black;
+  align-items: center;
+ text-align: center;
+ width: 300px;
+ border-radius: 10px
+}

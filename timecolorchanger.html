@@ -1,0 +1,62 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>JavaScript for Everyone:DOM</title>
+  </head>
+  <link rel="stylesheet" href="moke.css" />
+  <body onload="updatetime()">
+    <div id="wrapper">
+      <div id="nav_">
+        <h1 id="personname">
+          Asabeneh Yetayeh challenges in
+          <span id="time" style="font-size: 60px">2020</span>
+        </h1>
+      </div>
+      <div id="days">
+        <h2 style="text-decoration: underline">30DaysOfJavaScript Challenge</h2>
+      </div>
+      <div id="may">
+        <h2>may 23 2024</h2>
+        <p id="time"></p>
+        <script>
+          function updatetime() {
+            const currentTime = new Date();
+            const timestring = currentTime.toLocaleTimeString();
+            document.getElementById("time").innerHTML = timestring;
+            const randomColor =
+              "#" + Math.floor(Math.random() * 16777216).toString(16);
+            document.getElementById("may").style.backgroundColor = randomColor;
+            setInterval(updatetime, 1000);
+          }
+          updatetime();
+        </script>
+      </div>
+      <div id="list">
+        <ul>
+          <li style="background-color: #5bbc7a" id="li_1">
+            30DaysOfPython Challenge Done
+          </li>
+          <li style="background-color: #f7dc5c" id="li_4">
+            30DaysOfFullStack Challenge Coming
+          </li>
+          <li style="background-color: #eb695b" id="li_5">
+            30DaysOfDataAnalysis Challenge Coming
+          </li>
+          <li style="background-color: #eb695b" id="li_6">
+            30DaysOfReactNative Challenge Coming
+          </li>
+          <li style="background-color: #eb695b" id="li_7">
+            30DaysOfMachineLearning Challenge Coming
+          </li>
+          <li style="background-color: #eb695b" id="li_6">
+            30DaysOfReactNative Challenge Coming
+          </li>
+          <li style="background-color: #eb695b" id="li_7">
+            30DaysOfMachineLearning Challenge Coming
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
